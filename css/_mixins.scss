@@ -1,0 +1,45 @@
+$color-White: #FFFFFF;
+$color-Pickled-Bluewood: #2C3E50;
+$color-Key-Lime-Pie: #B3C02A;
+$color-Jumbo: #87868A;
+$color-Alabaster: #F9F9F9;
+$color-Concrete: #F2F2F2;
+$color-Alto: #D9D9D9;
+$color-Wild-Sand: #F4F4F4;
+$color-Alto-Two: #D8D8D8;
+
+@mixin fontArial () {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin boldFont ($boolean) {
+    @if ($boolean) {
+        font-weight: bold;
+    }
+}
+
+@mixin smoothTransition () {
+    transition: all 0.3s;
+}
+
+@mixin iconColorWithoutHover () {
+    color: $color-Jumbo;
+}
+
+@mixin iconColorWithHover () {
+    color: $color-Key-Lime-Pie;
+}
+
+@mixin backgroundColorBluewood () {
+    background-color: $color-Pickled-Bluewood;
+}
+
+@mixin backgroundColorWhite () {
+    background-color: $color-white;
+}
+
+@mixin bodyWithoutMarginNeitherPadding () {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
